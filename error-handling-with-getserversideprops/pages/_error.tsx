@@ -2,11 +2,14 @@ import {NextApiResponse, NextPageContext} from 'next'
 
 function Error({statusCode}: NextApiResponse) {
   return (
-    <p>
-      {statusCode
-        ? `An error ${statusCode} occurred on server`
-        : 'An error occurred on client'}
-    </p>
+    <>
+      <h2>custom error page</h2>
+      <p>
+        {statusCode
+          ? `An error ${statusCode} occurred on server`
+          : 'An error occurred on client'}
+      </p>
+    </>
   )
 }
 
