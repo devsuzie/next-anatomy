@@ -5,12 +5,11 @@ import Error from 'next/error'
 import {useEffect} from 'react'
 
 function MyApp({Component, pageProps}: AppProps) {
-  if (pageProps.error) {
-    console.log(pageProps.error)
+  if (pageProps.errorCode) {
     return (
       <Error
-        statusCode={pageProps.error.statusCode}
-        title={pageProps.error.message}
+        statusCode={pageProps.errorCode}
+        title={pageProps.errorCode + '에러가 발생했습니다'}
       />
     )
   }
