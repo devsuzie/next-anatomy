@@ -26,4 +26,8 @@ npm run dev
 > [Custom Error](https://nextjs.org/docs/advanced-features/custom-error-page#reusing-the-built-in-error-page)로
 > 해결해보자.
 
-[Error Handling with getServerSideProps](/error-handling-with-getserversideprops)
+#### 2021.10.24
+
+> 테스트하기 위해 [json-server](https://github.com/typicode/json-server) 이라는
+> 놈을 찾아냈다. 이것만 있으면 404든 500이든 원하는 에러를 뱉어내는 API를 만들
+> 수 있다고..?!
