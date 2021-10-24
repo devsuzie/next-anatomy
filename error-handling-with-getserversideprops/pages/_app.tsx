@@ -5,15 +5,16 @@ import Error from 'next/error'
 import {useEffect} from 'react'
 
 function MyApp({Component, pageProps}: AppProps) {
-  if (pageProps.errorCode) {
+  if (pageProps.error) {
     return (
       <Error
-        statusCode={pageProps.errorCode}
-        title={pageProps.errorCode + '에러가 발생했습니다'}
+        statusCode={pageProps.error.statusCode}
+        title={pageProps.error.message}
       />
     )
   }
 
   return <Component {...pageProps} />
 }
+
 export default MyApp
